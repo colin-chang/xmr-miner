@@ -1,5 +1,5 @@
 # XMR Miner
-xmr mining application. it's based on xmrig-5.4.0 for windows/linux/docker.
+xmr mining application. it's based on [xmrig](https://github.com/xmrig/xmrig)-5.4.0 for windows/linux/docker.
 
 ## Windows
 
