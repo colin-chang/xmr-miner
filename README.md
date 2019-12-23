@@ -1,10 +1,10 @@
 # XMR Miner
-xmr mining application. it's based on xmrig-5.3.0 for windows/linux/docker.
+xmr mining application. it's based on xmrig-5.4.0 for windows/linux/docker.
 
 ## Windows
 
 ```sh
-cd xmrig-5.3.0-win64
+cd xmrig-5.4.0-win64
 
 # run start.cmd in cli(like cmd or powershell).
 ```
@@ -19,7 +19,7 @@ example : `xmrig.exe -o stratum+tcp://xmr.f2pool.com:13531 -u 83j14db8zzaVarmQBm
 ## Ubuntu
 ```sh
 # 方式1：控制台运行
-./xmrig-5.3.0-linux/start.sh
+./xmrig-4.0-linux/start.sh
 
 # 方式2：服务方式运行
 sudo vi /etc/systemd/system/xmr.service
