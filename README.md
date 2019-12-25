@@ -60,26 +60,26 @@ example : `./xmrig -o xmr.f2pool.com:13531 -u 83j14db8zzaVarmQBmVXHZBnre8HKEi8QF
 ## Docker
 ```sh
 docker build -t colinchang/xmr:5.4.0 .
-docker run -d -e wallet='your wallet' -e worker='worker name' colinchang/xmr:5.4.0
+docker run -it -e pool='your mining pool' -e wallet='your wallet' -e worker='worker name' colinchang/xmr:5.4.0
 ```
  
 ```sh
 # cpus can control how many cpu cores to use,be sure it's lower than cpu cores the computer and container owns.
-docker run -d -e worker='colin' --cpus 3.6 colinchang/xmr:5.4.0
+docker run -it -e worker='colin' --cpus 3.6 colinchang/xmr:5.4.0
 ```
 
 ## CPU + GPU
 
 RandomX optimizes CPU performance,all the mothods above are used CPU only for mining.
 
-if you also wanna start mining with GPU,follow the guid below.
+if you also wanna start mining with GPU,follow the guide below.
 
 ```sh
 # for AMD GPU
 ./xmrig -o xmr.f2pool.com:13531 -u 83j14db8zzaVarmQBmVXHZBnre8HKEi8QFh5p9fWnyzobSADaujKnwxN6ccEiFeLFXgGAsj2YvsTddJVQ3mukVg53fGUk77.colin -p x -k --donate-level 1 --opencl
 
 # for NVIDIA (CUDA10.1+ required)
-./xmrig -o xmr.f2pool.com:13531 -u 83j14db8zzaVarmQBmVXHZBnre8HKEi8QFh5p9fWnyzobSADaujKnwxN6ccEiFeLFXgGAsj2YvsTddJVQ3mukVg53fGUk77.colin -p x -k --donate-level 1 --opencl
+./xmrig -o xmr.f2pool.com:13531 -u 83j14db8zzaVarmQBmVXHZBnre8HKEi8QFh5p9fWnyzobSADaujKnwxN6ccEiFeLFXgGAsj2YvsTddJVQ3mukVg53fGUk77.colin -p x -k --donate-level 1 --cuda
 ```
 > CUDA : https://developer.nvidia.com/cuda-downloads?target_os=Linux
 
