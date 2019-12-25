@@ -59,13 +59,13 @@ example : `./xmrig -o xmr.f2pool.com:13531 -u 83j14db8zzaVarmQBmVXHZBnre8HKEi8QF
 
 ## Docker
 ```sh
-docker build -t xmr:1.0 .
-docker run -d -e wallet='your wallet' -e worker='worker name' xmr:1.0
+docker build -t colinchang/xmr:5.4.0 .
+docker run -d -e wallet='your wallet' -e worker='worker name' colinchang/xmr:5.4.0
 ```
  
 ```sh
 # cpus can control how many cpu cores to use,be sure it's lower than cpu cores the computer and container owns.
-docker run -d -e worker='colin' --cpus 3.6 xmr:1.0
+docker run -d -e worker='colin' --cpus 3.6 colinchang/xmr:5.4.0
 ```
 
 ## CPU + GPU
