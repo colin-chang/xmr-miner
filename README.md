@@ -19,7 +19,7 @@ example : `xmrig.exe -o stratum+tcp://xmr.f2pool.com:13531 -u 83j14db8zzaVarmQBm
 ## Ubuntu
 ```sh
 # 方式1：控制台运行
-./xmrig-4.0-linux/start.sh
+./xmrig-5.4.0-linux/start.sh
 
 # 方式2：服务方式运行
 sudo vi /etc/systemd/system/xmr.service
